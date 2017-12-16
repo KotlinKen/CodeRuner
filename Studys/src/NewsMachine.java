@@ -25,7 +25,11 @@ public class NewsMachine implements Publisher{
 		
 	}
 
-
+	public void SetBook(String title, String news) {
+		this.title = title;
+		this.news = news;
+		
+	}
 
 	@Override
 	public void notifyObserver() {
@@ -49,34 +53,7 @@ public class NewsMachine implements Publisher{
 	public String getNews(){
 		return news;
 	}
-	
-	public static void main(String[] args) {
-		String a ="aaa";
-		String b = "aaa";
-		
-		
-		System.out.println(a==b);
-		
  
- 
-			
- 
-	}
-	
 
 }
-
-
-class Outer {
-	Outer(){
-		
-	}
-	
-	class Inner{
-		int ivs = 100;
-		
-	}
-	public static class sInner{
-		int iv = 200;
-	}
-}
+ 
